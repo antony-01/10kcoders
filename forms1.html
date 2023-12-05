@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+
+        #fname,#lname,#mail{
+            width:17%;
+            height: 25px;
+        }
+        label{
+            font-weight: 500;
+        }
+        div{
+          
+            margin-left:80px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Profile</legend>
+            <label for="fname">First name:</label> <br>
+            <input type="text" placeholder="enter name" id="fname" name="fname" > <br>
+            <label for="lname">Last name:</label> <br>
+            <input type="text" placeholder="enter name" id="lname" name="lname" >  <br>
+            <label for="password">password:</label> <br>
+            <input type="password" placeholder="pasword" id="lname" name="pass" >  <br>
+            <label for="mail">Email address:</label> <br>
+            <input type="email" placeholder="name@Domain.com" id="mail" name="mail" >
+            <br> <br>
+            <label>Gender:</label><br>
+           <input type="radio" > 
+           <label>male</label> <br>
+           <input type="radio" >  
+           <label>female</label>
+           <br> <br>
+           <label>Stream:</label><br>
+           <input type="checkbox" > 
+           <label>Btech</label> <br>
+           <input type="checkbox" >  
+           <label>Degree</label>
+           <br><br>
+
+           <label>Choose your stream &nbsp</label>
+           <select>
+            <option value="Master">
+                Masters
+            </option>
+            <option value="Bachelors">
+               Bachelors
+            </option>
+            <option value="12th">
+                12th graduate
+            </option>
+            <option value="10th" selected>
+                10th graduate
+            </option>
+           </select>
+           <br>  <br>
+
+           <label for="certificate"> Send your CV</label><br>
+           <input  type="file" id="certificate" name="certificate" > <br><br>
+           
+           <label>Date of birth:</label>
+           <input type="date"><br><br>
+
+           <label for="roles">Role</label><br>
+          <input list="roles" name="roles">
+          <datalist id="roles">
+              <option>React js developer</option>
+              <option>Full stack developer</option>
+              <option>java developer</option>
+              <option> Testing engineer</option>
+    <br> <br>
+    
+           <input type="submit" value="submit">
+
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
